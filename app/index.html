@@ -35,8 +35,17 @@
   <script src="bower_components/angular/angular.js"></script>
   <script src="bower_components/angular-route/angular-route.js"></script>
   <script src="components/pubnub-ds-beta-1.0.js"></script>
-  <script src="bower_components/pubnub-angular/lib/pubnub-angular.js"></script>
 
+  <script>
+    var pubnub = PUBNUB({
+        publish_key:'demo',
+        subscribe_key:'demo',
+        uuid:'angular-ds'
+        
+    });
+  </script>
+
+  <script src="bower_components/pubnub-angular/lib/pubnub-angular.js"></script>
   <script src="app.js"></script>
   <script src="view1/view1.js"></script>
   <script src="view2/view2.js"></script>

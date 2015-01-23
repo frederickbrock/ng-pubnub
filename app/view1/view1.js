@@ -11,16 +11,16 @@ angular.module('myApp.view1', ['ngRoute'])
 
 .controller('View1Ctrl', function($scope, PubNub) {
 
-      PubNub.init({
-        publish_key:'demo',
-        subscribe_key:'demo',
-        uuid:'angular-ds'
-      });
-
+      PubNub.init();
+     
       $scope.publish = function() {
+        
         PubNub.ngPublish({
           channel: "fred-angular-test",
           message: {"text":"hello world from angular"}
         });
+
       };
+
+      $scope.publish();
 });

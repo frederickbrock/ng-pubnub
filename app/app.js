@@ -1,5 +1,11 @@
 'use strict';
 
+var pubnub = PUBNUB({
+	    publish_key:'demo',
+        subscribe_key:'demo',
+        uuid:'angular-ds'
+});
+
 // Declare app level module which depends on views, and components
 angular.module('myApp', [
   'ngRoute',
