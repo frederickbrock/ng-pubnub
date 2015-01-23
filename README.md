@@ -66,9 +66,10 @@ The remaining changes are in the Angular wrapper. Because we initialize pubnub o
 
 To use this approach: 
 
-1. Copy the bower_components/pubnub-angular/lib/pubnub-angular.js to a location in your project.
-2. As described above initialize pubnub prior to including the pubnub-angular.js, but after including pubnub-ds-beta-1.0.js.
-3. do not include the core pubnub.js
+1. Copy the *bower_components/pubnub-angular/lib/pubnub-angular.js* to a location in your project.
+2. As described above initialize pubnub prior to including the *pubnub-angular.js*, but after including *pubnub-ds-beta-1.0.js*.
+3. do not include the core pubnub.js 
+4. You must have a subcribe_key that has datasync available.
 
 You can view index.html for initialization, view1.js for usage
 
